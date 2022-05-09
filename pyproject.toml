@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "mondaydotcom-notebooks"
+version = "0.1.0"
+description = "Notebook-as-functions for CHAI Monday.com work"
+authors = ["CU Health AI Software Engineering <cuhealthai-softwareengineering@cuanschutz.edu>"]
+license = "BSD-3"
+
+[tool.poetry.dependencies]
+python = "~3.9"  # hard dependency, https://github.com/smartsheet-platform/smartsheet-python-sdk/issues/173
+pandas = "^1.4.2"
+papermill = "^2.3.4"
+pywin32 = "304"
+prefect = {extras = ["all"], version = "^1.2.1"}
+jupyter = "^1.0.0"
+mondaydotcom-utils = {git = "https://github.com/CUHealthAI/mondaydotcom-utils", rev = "main"}
+scrapbook = {extras = ["all"], version = "^0.5.0"}
+PyNaCl = "^1.5.0"
+python-dotenv = {extras = ["cli"], version = "^0.20.0"}
+smartsheet-python-sdk = "^2.105.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+vulture = "^2.3"
+bandit = "^1.7.4"
+isort = "^5.10.1"
+black = "^22.3.0"
+safety = "^1.10.3"
+mypy = "^0.942"
+pylint = "^2.13.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = 100
+

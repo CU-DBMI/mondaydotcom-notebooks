@@ -1,0 +1,35 @@
+---
+
+functions:
+
+  - name: Mondaydotcom Set Task Integration Status
+    context: set_task_integration_status
+    inputs:
+      - name: environment
+        type: str
+        required: False
+    outputs:
+      - name: updated_task_count
+        type: int
+
+  - name: Mondaydotcom Create Periodic Project Updates
+    context: create_periodic_project_updates
+    inputs:
+      - name: environment
+        type: str
+        required: False
+    ouputs: None
+    
+  - name: Mondaydotcom Create Monthly Task Reports
+    context: create_monthly_project_reports
+    inputs:
+      - name: environment
+        type: str
+        required: False
+      - name: year
+        type: int
+        required: True
+      - name: month
+        type: int
+        required: True
+    outputs: None
