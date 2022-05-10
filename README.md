@@ -1,4 +1,5 @@
 # mondaydotcom-notebooks
+
 Center-specific notebook logic, mostly with MDC data
 
 # Requirements
@@ -28,9 +29,20 @@ Note, the `_output` folder must already exist.
 
 Keys for MDC and SS are kept in files called `.env-<environment>`, where environment is a parameter passed into the notebook. For example, the environment variable file for `dev` is `.env-dev`. These files are located in the same folder as the notebooks.
 
-## Example .env file:
+## Example .env file
 
 ```
 MONDAY_KEY=1234124313109482304238409328402384032840238404380482390
 SMARTSHEET_KEY=123980123890123980
 ```
+
+## Cleaning and Linting with Dagger
+
+Development may be assisted using [Dagger](https://docs.dagger.io/) and related files within this repo. Use the following steps to get started:
+
+1. [Install Dagger](https://docs.dagger.io/1200/local-dev)
+1. Open a terminal and navigate to the directory of this source.
+1. Use `dagger project update` to populate dependencies.
+1. Use the following to clean, lint, or test with Dagger:
+    - Clean: `dagger do clean` (perform various auto-formatting on notebooks)
+    - Lint: `dagger do lint` (perform various linting on notebooks and project)
