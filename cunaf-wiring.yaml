@@ -1,0 +1,12 @@
+name: Mondaydotcom Notebooks
+admin_email: no-reply@example.com
+functions:
+  - name: Mondaydotcom Create Monthly Task Reports
+    file_path: mondaydotcom-notebooks/Mondaydotcom Create Monthly Task Reports.ipynb   
+    # schedule: Note this one should _not_ be scheduled to run automatically yet.
+  - name: Mondaydotcom Set Task Integration Status
+    file_path: mondaydotcom-notebooks/Mondaydotcom Set Task Integration Status.ipynb
+    schedule: "0 18 * * *" # Daily 18h00
+  - name: Mondaydotcom Create Periodic Project Updates
+    file_path: mondaydotcom-notebooks/Mondaydotcom Create Periodic Project Updates.ipynb
+    schedule: "0 6 * * 1"  # Weekly 06h00 on Monday
