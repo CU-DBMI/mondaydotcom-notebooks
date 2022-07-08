@@ -2653,7 +2653,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.9"  # hard dependency, https://github.com/smartsheet-platform/smartsheet-python-sdk/issues/173
-content-hash = "30662ccd13e955148da7e9ea9db900d4b7c1e1f6b913c4e1262abecacddb34be"
+content-hash = "3ef755e0f2194466cf2317fa57d1b62a29cd103dae58eddaf95fe4899bac418e"
 
 [metadata.files]
 aiofiles = []
