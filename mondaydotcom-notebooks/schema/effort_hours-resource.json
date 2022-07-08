@@ -18,6 +18,13 @@
             "type": "string",
             "title": "The name of the person or team"
         },
+        "Notes": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "title": "Optional Resource Notes"
+        },
         "Tasks": {
             "type": "array",
             "title": "A list of tasks",
