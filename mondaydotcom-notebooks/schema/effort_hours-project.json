@@ -25,6 +25,10 @@
             ],
             "title": "Open, closed, etc."
         },
+        "No Bill": {
+            "type": "boolean",
+            "title": "A flag that indicates if the Client should be billed"
+        },
         "Notes": {
             "type": [
                 "string",
@@ -38,6 +42,13 @@
                 "null"
             ],
             "title": "Grant proposal number"
+        },
+        "Parent Client": {
+            "$ref": "effort_hours-client.json"
+        },
+        "Completed Hours": {
+            "type": "number",
+            "title": "Completed hours for this task for the report"
         },
         "Resources": {
             "type": "array",

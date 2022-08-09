@@ -1,0 +1,4 @@
+---
+environment_code: prod
+monday_key: "{{ vault_monday_key }}"
+smartsheet_key: "{{ vault_smartsheet_key }}"

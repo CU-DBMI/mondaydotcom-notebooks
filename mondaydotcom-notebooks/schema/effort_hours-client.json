@@ -24,6 +24,10 @@
             "type": "boolean",
             "title": "A flag that indicates if the Client should be billed"
         },
+        "Completed Hours": {
+            "type": "number",
+            "title": "Completed hours for this task for the report"
+        },
         "Notes": {
             "type": [
                 "string",

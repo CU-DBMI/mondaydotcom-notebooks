@@ -24,6 +24,10 @@
             "format": "date",
             "title": "Hours calculated for the month"
         },
+        "Completed Hours": {
+            "type": "number",
+            "title": "Completed hours for this task for the report"
+        },
         "Notes": {
             "type": [
                 "string",

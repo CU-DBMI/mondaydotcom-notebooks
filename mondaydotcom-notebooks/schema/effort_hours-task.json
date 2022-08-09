@@ -63,6 +63,16 @@
                 "null"
             ],
             "title": "Optional integration message"
+        },
+        "Parent Project": {
+            "$ref": "effort_hours-project.json"
+        },
+        "Resources": {
+            "type": "array",
+            "title": "Resources associated with the task",
+            "items": {
+                "$ref": "effort_hours-resource.json"
+            }
         }
     }
 }

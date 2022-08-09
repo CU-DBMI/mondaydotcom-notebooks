@@ -18,6 +18,10 @@
             "type": "string",
             "title": "The name of the person or team"
         },
+        "Completed Hours": {
+            "type": "number",
+            "title": "Completed hours for this task for the report"
+        },
         "Notes": {
             "type": [
                 "string",
