@@ -29,6 +29,12 @@ Note, the `_output` folder must already exist.
 
 Keys for MDC and SS are kept in files called `.env-<environment>`, where environment is a parameter passed into the notebook. For example, the environment variable file for `dev` is `.env-dev`. These files are located in the same folder as the notebooks.
 
+Use the Ansible playbook to create the secrets files,
+
+    ansible-playbook -i inventory/prod create_environment_file.yaml --ask-vault-pass
+
+The vault secret is in the team LastPass.
+
 ## Example .env file
 
 ```
