@@ -1,8 +1,8 @@
 name: Mondaydotcom Notebooks
 admin_email: no-reply@example.com
 functions:
-  - name: Mondaydotcom Create Monthly Task Reports
-    file_path: mondaydotcom-notebooks/Mondaydotcom Create Monthly Task Reports.ipynb   
+  - name: Mondaydotcom Create Monthly Task Exports
+    file_path: mondaydotcom-notebooks/Mondaydotcom Create Monthly Task Exports.ipynb   
     # schedule: Note this one should _not_ be scheduled to run automatically yet.
   - name: Mondaydotcom Set Task Integration Status
     file_path: mondaydotcom-notebooks/Mondaydotcom Set Task Integration Status.ipynb
